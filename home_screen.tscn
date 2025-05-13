@@ -1,0 +1,137 @@
+[gd_scene load_steps=8 format=3 uid="uid://cs63rubkqkjjk"]
+
+[ext_resource type="Script" uid="uid://baiutya1mahn6" path="res://home_screen.gd" id="1_olt8n"]
+[ext_resource type="Texture2D" uid="uid://cffvthi30l8l2" path="res://bg.png" id="2_fm0op"]
+[ext_resource type="Texture2D" uid="uid://cpjbjovptv1na" path="res://Logo.png" id="2_ktig4"]
+[ext_resource type="Texture2D" uid="uid://bge4m8cwensn0" path="res://CufeLogo.png" id="3_outur"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_outur"]
+bg_color = Color(0.47451, 0.494118, 0.741176, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fm0op"]
+bg_color = Color(0.293055, 0.211756, 0.382679, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ktig4"]
+bg_color = Color(0.607843, 0.494118, 0.741176, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="HomeScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_olt8n")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1082.0
+offset_bottom = 2400.0
+texture = ExtResource("2_fm0op")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 622.0
+offset_right = 1042.0
+offset_bottom = 1815.0
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 31
+text = "Choose the desired simulation
+"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_outur")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fm0op")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ktig4")
+text = "
+Wrist Joint
+ 
+"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_outur")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fm0op")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ktig4")
+text = "
+Shoulder Joint
+ 
+"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_outur")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fm0op")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ktig4")
+text = "
+Elbow Joint
+ 
+"
+
+[node name="Button4" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_outur")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fm0op")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ktig4")
+text = "
+Spine Joints
+ 
+"
+
+[node name="Button5" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_outur")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fm0op")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ktig4")
+text = "
+Knee Joint
+ 
+"
+
+[node name="Button6" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_outur")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fm0op")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ktig4")
+text = "
+Ankle Joint
+ 
+"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 386.0
+offset_top = 349.0
+offset_right = 766.0
+offset_bottom = 857.0
+texture = ExtResource("2_ktig4")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 775.0
+offset_top = -6.0
+offset_right = 1113.0
+offset_bottom = 235.0
+texture = ExtResource("3_outur")
+expand_mode = 1
+stretch_mode = 4
